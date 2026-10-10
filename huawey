@@ -7,5 +7,5 @@ config huawey 'settings'
 	option chat_id '-10022570126'
 	option message_thread_id '0'
 	option lan_off_duration '30'
-	option modem_path 'python3 /usr/bin/huawei.py'
+	option modem_path '/usr/bin/huawei.py'
 
