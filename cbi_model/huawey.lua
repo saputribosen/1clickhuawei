@@ -1,4 +1,4 @@
-local fs = require("nixio.fs")
+local fs = require("nixio.fs")local fs = require("nixio.fs")local fs = require("nixio.fs")
 
 map = Map("huawey", "Huawei Configuration", "Configure Huawei router settings.")
 map.description = [[
@@ -52,9 +52,6 @@ option.datatype = "uinteger"
 option.default = 5
 option.placeholder = "Enter Ping Duration in second"
 
-option = section:option(Value, "modem_path", "Modem Path")
-option.default = "/usr/bin/huawei.py"
-option.placeholder = "Path Script (/usr/bin/script.sh)"
 
 -- Add a button for starting/stopping the service
 service_btn = section:option(Button, "_service", "Control Services")
