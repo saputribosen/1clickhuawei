@@ -76,7 +76,7 @@ function loop() {
 
     if [ "$lan_off_timer" -ge "$LAN_OFF_DURATION" ]; then
       log "LAN off selama $LAN_OFF_DURATION detik, menjalankan script pergantian IP ..."
-      MODEM_PATH &>> "$LOG_FILE"
+      python3 $MODEM_PATH &>> "$LOG_FILE"
       lan_off_timer=0 
     fi
 
