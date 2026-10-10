@@ -106,7 +106,7 @@ download_files() {
 
 echo ""
 echo "Install prerequisites."
-read -p "Do you want to install prerequisites (y/n)? " yn
+read -p "Do you want to install prerequisites (y/n)? " yn </dev/tty
 case $yn in
     [Yy]* ) install_update;;
     [Nn]* ) echo "Skipping prerequisites installation...";;
@@ -117,7 +117,7 @@ echo ""
 echo "Install Script code from repo aryo."
 
 while true; do
-    read -p "This will download the files. Do you want to continue (y/n)? " yn
+    read -p "This will download the files. Do you want to continue (y/n)? " yn </dev/tty
     case $yn in
         [Yy]* ) download_files; break;;
         [Nn]* ) echo "Installation canceled. Ensure you have a stable internet connection before retrying."; exit;;
